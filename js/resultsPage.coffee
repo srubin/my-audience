@@ -50,7 +50,7 @@ $ ->
     .change ->
       vis = $select.val()
       if vis isnt ''
-        history.pushState null, vis, "result.html?vis=#{vis}"
+        history.pushState null, vis, "?vis=#{vis}"
         renderVis vis
 
 

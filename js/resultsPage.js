@@ -67,7 +67,7 @@
     return $select.chosen().change(function() {
       vis = $select.val();
       if (vis !== '') {
-        history.pushState(null, vis, "result.html?vis=" + vis);
+        history.pushState(null, vis, "?vis=" + vis);
         return renderVis(vis);
       }
     });
