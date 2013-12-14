@@ -371,7 +371,7 @@
       this.$el = $el;
       this.callback = callback;
       this.$el.find('.visImg').html("<img src=\"data/" + this.vis + "/0.png\" />");
-      $.getJSON("data/" + this.vis + "/result.csv", function(res) {
+      $.getJSON("data/" + this.vis + "/result.json", function(res) {
         var averageScore, cb, floatFormat, scov, sprv;
         _this.nuggets = res.nuggets;
         _this.statements = res.statements;

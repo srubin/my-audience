@@ -368,7 +368,7 @@ class VisUnderstandingResult
             <img src="data/#{@vis}/0.png" />
             """)
 
-        $.getJSON "data/#{@vis}/result.csv", (res) =>
+        $.getJSON "data/#{@vis}/result.json", (res) =>
             @nuggets = res.nuggets
             @statements = res.statements
             @scoreHist = res.score_histogram
